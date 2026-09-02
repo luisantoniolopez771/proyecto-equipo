@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Sistema de Inscripción Escolar</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -23,13 +25,35 @@
 
     <section id="inicio">
       <h2>Bienvenido</h2>
-      <p>Este es el panel principal del sistema de inscripción. Desde aquí, alumnos y administradores pueden consultar información básica del ciclo escolar.</p>
+      <p>Este es el panel principal del sistema de inscripción. Desde aquí, alumnos y administradores pueden consultar
+        información básica del ciclo escolar.</p>
     </section>
 
     <section id="alumnos">
       <h2>Alumnos</h2>
       <!-- TODO (rama feature-alumnos): agregar aquí una tabla simple con columnas Nombre / Matrícula / Semestre -->
-      <p><em>(Sección en construcción)</em></p>
+      <table>
+        <tr>
+          <th>Nombre</th>
+          <th>Matrícula</th>
+          <th>Semestre</th>
+        </tr>
+        <tr>
+          <td>Ana Silva</td>
+          <td>123456</td>
+          <td>Sexto</td>
+        </tr>
+        <tr>
+          <td>Carlos Ruiz</td>
+          <td>654321</td>
+          <td>Séptimo</td>
+        </tr>
+        <tr>
+          <td>Luis López</td>
+          <td>789012</td>
+          <td>Quinto</td>
+        </tr>
+      </table>
     </section>
 
     <section id="materias">
@@ -63,4 +87,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
