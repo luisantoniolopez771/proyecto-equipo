@@ -10,9 +10,18 @@ document.getElementById("form-contacto").addEventListener("submit", function (e)
   const correo = document.getElementById("correo").value.trim();
   const mensaje = document.getElementById("mensaje").value.trim();
 
-  // TODO (rama feature-validacion): agregar aquí las reglas de validación,
-  // por ejemplo: que ningún campo esté vacío, y que el correo tenga un
-  // formato razonable (contenga "@" y ".").
+  // Validar que ningún campo esté vacío
+  if (nombre === "" || correo === "" || mensaje === "") {
+    alert("Error: Ningún campo debe estar vacío.");
+    return;
+  }
 
-  alert("Formulario recibido (validación pendiente de implementar).");
+  // Validar que el correo tenga @ y .
+  if (!correo.includes("@") || !correo.includes(".")) {
+    alert("Error: Por favor ingresa un correo válido con '@' y '.'.");
+    return;
+  }
+
+  // Mensaje de éxito si todo está bien
+  alert("¡Mensaje enviado con éxito!");
 });
